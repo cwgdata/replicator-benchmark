@@ -20,7 +20,7 @@ Current Limitation is that it is setup for non SSL configurations.
 2) `cd cluster1/terraform`
 3) `terraform init`
 4) copy your aws pem file to current directory
-5) Edit terraform.tfvars to your liking (substitute in AWS keys and pem name)
+5) Edit terraform.tfvars to your liking
 6) `terraform apply`
 7) `terraform output -json | ./create_ansible_inventory.py -p > hosts.yml`
 8) `terraform output -json | ./register_host_keys.py`
